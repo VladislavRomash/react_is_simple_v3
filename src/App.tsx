@@ -1,22 +1,23 @@
 import React from 'react';
 import './App.css';
-import {Star} from './components/Star';
 import {Accordion} from './components/Accordion/Accordion';
 import {Title} from './components/Title';
+import {Rating} from './components/Rating/Rating';
 
 function App() {
     return (
         <div className="App">
 
-            <Title/>
+            <Title title={'Learning React'}/>
+            <Title title={'Learning HTML'}/>
 
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
+            Article 1
+            <Rating count={1}/>
+            Article 2
+            <Rating count={4}/>
 
-            <Accordion/>
+            <Accordion title={'Menu'}/>
+            <Accordion title={'List of products'}/>
 
         </div>
     );

@@ -5,6 +5,7 @@ import {Title} from './components/Title';
 import {Rating} from './components/Rating/Rating';
 
 function App() {
+
     return (
         <div className="App">
 
@@ -16,8 +17,10 @@ function App() {
             Article 2
             <Rating count={4}/>
 
-            <Accordion title={'Menu'}/>
-            <Accordion title={'List of products'}/>
+            <Accordion title={'Menu'}
+                       click={false}/>
+            <Accordion title={'List of products'}
+                       click={true}/>
 
         </div>
     );

@@ -10,14 +10,8 @@ type AccordionProps = {
 export const Accordion = ({title, click}: AccordionProps) => {
     return (
         <div>
-            {
-                click
-                    ? <>
-                        <AccordionTitle title={title}/>
-                        <AccordionBody/>
-                    </>
-                    : <AccordionTitle title={title}/>}
-
+            <AccordionTitle title={title}/>
+            {click && <AccordionBody/>}
         </div>
     );
 };
